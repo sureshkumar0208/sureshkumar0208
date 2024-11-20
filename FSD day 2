@@ -1,0 +1,18 @@
+Difference Between Document and Window Objects;
+     In the web development, JavaScript is an essential language used for creating dynamic and interactive web pages.
+     One of the key aspects of JavaScript's interaction with the web page is the Document Object Model (DOM), a programming interface that allows scripts to manipulate the structure, style, and content of web documents. 
+     When working with the DOM, two of the most important objects that a developer encounters are the document object and the window object. While these two objects are integral to JavaScript's interaction with the browser, they serve very different purposes.
+     Understanding the differences between Window and Document objects is crucial in JavaScript and web development.
+      Window manages browser interactions, while Document acts as an interface for content manipulation. Using these functionalities allows developers to create interactive web experiences.
+
+In this blog, we will explore the distinctions between the document and window objects, their roles in web development, and how they are used in JavaScript programming.
+
+window Object;
+     The window object is a global object that represents the browser's window or frame in which the web page is rendered. It serves as the top-level object in the browser's object hierarchy. 
+     The window object represents a window/tab containing a DOM document where as document object is property of window object that points to the DOM document loaded in that window. You can access a document object either using window. document property or using document object directly as window is global object.
+     When you work with JavaScript in a web page, the window object is implicitly available, and it provides access to the browser's environment, including the ability to manipulate things like browser settings, history, and dimensions.
+     The Window object represents the window in the browser. The window object is automatically created from the browser. All browsers support the Window object. Global variables are the properties of the Window objects, and global functions are the methods of the Window object.
+    
+document Object;
+     The document object is part of the DOM (Document Object Model) and represents the content of the web page itself. It provides an interface to access, modify, and manipulate the structure and content of the HTML document.
+     The document object is specific to the current page and allows developers to interact with the elements and content on the web page, such as the HTML tags, text, and attributes.
