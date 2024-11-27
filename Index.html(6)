@@ -1,0 +1,23 @@
+01). country flag 
+
+<html>
+<body>
+<script>
+let xhr=new XMLHttpRequest
+xhr.open("GET", "https://restcountries.com/v3.1/all", true)
+xhr.onload=function(){
+if(xhr.status>=200&&xhr.status<300){
+let response=JSON.parse(xhr.responseText);
+let newarray=[]
+for(i=0;i<response.length;i++) {
+newarray.push(response[i].flags)
+    }
+console.log(newarray)
+}
+else {console.log("The request failed");
+}
+}
+xhr.send();
+</script>
+</body>
+</html>
