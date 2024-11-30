@@ -1,0 +1,45 @@
+body {
+    padding: 0; 
+    margin: 0;  
+    }   
+.menu{
+    height: 100px;    
+    background-color: #2f3d47;    
+    top : 25px;    
+    }    
+.github-icon{    
+    display: inline;    
+    position: relative;    
+    top: 15px;    
+    left: 20px   
+    }    
+.heading{    
+    display: inline;
+    position: relative;
+    left : 50%;
+    color : white;
+}
+.side {
+    margin-top : 15px;
+    margin-left : 15px;
+    width : 300;
+    height : 500px;
+    background-color : #2f3d47;
+    border-radius : 20px;
+}
+.content {
+    width : 1000px;
+    height : 500px;
+    background-color : #2f3d47;
+    display : inline-block;
+    border-radius : 20px;
+    margin-left : 30px;
+}
+.box {
+    width : 22%;
+    height : 15px;
+    margin-left : 15px;
+    height : 300px;
+    background-color : white;
+    display : inline-block;
+}
