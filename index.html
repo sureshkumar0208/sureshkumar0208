@@ -1,66 +1,61 @@
-<!DOCTYPE html>
-<html>
+01 ) . “person” class to hold all the details 
+   <html>
     <head>
-
     </head>
     <body>
-        <from>
-            <div >
-               <label><b>Name</b></label></div>
-                <div><input type = "text"name="First"required/>
-                 <input type = "text"name="Last"required/>
-                </div>
-            </br>
-            <div>
-                <label><b>Email</b></label></div>
-                <div>
-                <input type = "password"required/>
-            </div>
-        </br>
-        <div>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-         <style>
-         .checked {
-              color: orange;
-            }
-         </style>
-         </head>
-         <body>
-            <label><b>Your Experience</b></label></div>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <div><span>Overall,how would you satisfied with us? </span></div>
-              </br>
-              <div>
-                <label><b>How satisfied are you with</b></label></div>
-                <div><label>Purchase   ; </label>
-                <input type = "radio"name ="purchase"/>very Unsatisfied
-                <input type = "radio"name ="purchase"/> Unsatisfied
-                <input type = "radio"name ="purchase"/> Neutral
-                <input type = "radio"name ="purchase"/> satisfied
-                <input type = "radio"name ="purchase"/> very satisfied</div>
-                <div><label>Service    ; </label>
-                    <input type = "radio"name ="Service"/>very Unsatisfied
-                    <input type = "radio"name ="Service"/> Unsatisfied
-                    <input type = "radio"name ="Service"/> Neutral
-                    <input type = "radio"name ="Service"/> satisfied
-                    <input type = "radio"name ="Service"/> very satisfied</div>
-                    <div><label>Company over all;</label>
-                        <input type = "radio"name ="Company over all"/>very Unsatisfied
-                        <input type = "radio"name ="Company over all"/> Unsatisfied
-                        <input type = "radio"name ="Company over all"/> Neutral
-                        <input type = "radio"name ="Company over all"/> satisfied
-                        <input type = "radio"name ="Company over all"/> very satisfied</div>
-                    </br>
-                
-                
-                <div><label for="subject">Additional comments (or) sugession.</label></div>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="width:350px"></textarea>
-                  </br>
-                <input type="submit" value="Submit">
-        </from>
+        <script>
+            class Person {
+  constructor(name, age, country) {
+    this.name = name;
+    this.age = age;
+    this.country = country;
+  }
+
+  displayDetails() {
+    console.log(`Name: ${this.name}`);
+    console.log(`Age: ${this.age}`);
+    console.log(`Country: ${this.country}`);
+  }
+}
+const person1 = new Person('Suresh', 25, 'TAMIL NADU');
+const person2 = new Person('Rohan', 26, 'India');
+console.log('Person-1 Details:');
+person1.displayDetails();
+console.log('\nPerson-2 Details:');
+person2.displayDetails();
+        </script>
+    </body>
+</html>
+
+2 ) . 
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            class UberPriceCalculator {
+    constructor() {
+        this.basePrice = 2.5; 
+        this.perMileRate = 1.2; 
+        this.perMinuteRate = 0.25;
+        this.minPrice = 5; 
+    }
+    calculatePrice(distance, time) {
+        if (distance < 0 || time < 0) {
+            throw new Error(".");
+        }
+        let price = this.basePrice + (this.perMileRate * distance) + (this.perMinuteRate * time);
+        if (price < this.minPrice) {
+            price = this.minPrice;
+        }
+        return price;
+    }
+}
+const uber = new UberPriceCalculator();
+const distance = 10; 
+const time = 20; 
+const price = uber.calculatePrice(distance, time);
+console.log(`The Uber price for ${distance} miles and ${time} minutes is ₹${price.toFixed(2)}.`);
+        </script>
     </body>
 </html>
